@@ -829,6 +829,19 @@ img {
   fill: var(--white-text-collor) ;
 }
 
+.sign-title{
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-collor);
+}
+
+/* бэкдроп и модальное окно */
 .backdrop{
   position: fixed;
   top: 0;
@@ -881,12 +894,96 @@ img {
   border-radius: 50%;
 } 
 
-.label-title{
-  display: block;
+.btn-close:hover,
+.btn-close:focus {
+  border: 1px solid  var(--link-collor);
+  color: var(--link-collor);
+
 }
 
-.input-item{
-  display: block;
+.btn-icon{ 
+  fill: currentColor ;
+}
+
+
+.form-title{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 12px;
+   
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--h-collor);
+}
+ 
+/* Форма внутри модального окна */
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  /* margin-left: auto;
+  margin-right: auto; */
+
+ 
+  width: 528px;
+  outline: 1px solid #008000;
+  
+
+}
+
+.form-wrap{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+  margin-bottom: 10px;
+  width: 448px;
+
+}
+.form-wrap-area{
+
+}
+
+.form-label{
+  /* display: block; */
+}
+
+.form-icon-box{
+
+  position: relative;
+  
+}
+
+.form-input{
+  width: 100%; 
+  height: 40px;
+  padding-left: 30px;
+}
+
+.form-icon{
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10.5px;
+
+
+}
+
+.form-wrap-area{ 
+  display: flex ;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 448px;
+}
+
+.form-area{
+  height: 120px;
+  width: 100%;
 }
 
 /* Портфлио */
