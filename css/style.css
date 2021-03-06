@@ -59,7 +59,15 @@ button{
   /* outline: 1px solid green */
 }
 
-.link {
+textarea{
+  outline: none;
+}
+
+input{
+  outline: none;
+}
+
+link {
   outline: none;
 }
 
@@ -896,7 +904,7 @@ img {
 
 .btn-close:hover,
 .btn-close:focus {
-  border: 1px solid  var(--link-collor);
+  border: 1px solid var(--link-collor);
   color: var(--link-collor);
 
 }
@@ -929,7 +937,7 @@ img {
 
  
   width: 528px;
-  outline: 1px solid #008000;
+  /* outline: 1px solid #008000; */
   
 
 }
@@ -939,29 +947,26 @@ img {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin-bottom: 10px;
   width: 448px;
 
-}
-.form-wrap-area{
-
-}
-
-.form-label{
-  /* display: block; */
-}
-
-.form-icon-box{
-
-  position: relative;
-  
 }
 
 .form-input{
   width: 100%; 
   height: 40px;
   padding-left: 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.form-icon-box{
+  position: relative;
+  
 }
 
 .form-icon{
@@ -969,8 +974,51 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 10.5px;
+}
+/* .form-icon-box:focus{
+  color: var var(--link-collor);
+  border-color: var var(--link-collor); 
+} */
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--link-collor);
+ 
+}
+
+.form-input:hover ~ .form-icon,
+.form-input:focus ~ .form-icon{
+  fill: var(--link-collor);
+}
 
 
+/* .form-input:hover,
+.form-input:focus {
+  border-color: var(--link-collor) ;
+} */
+
+.form-label{
+  margin-bottom: 4px;
+  
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.1379px;
+  line-height: 1.1836;
+
+  color: var(--primary-text-color);
+
+}
+
+.form-label-area{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.5px;
+  line-height: 1.142;
+
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .form-wrap-area{ 
@@ -984,7 +1032,36 @@ img {
 .form-area{
   height: 120px;
   width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 10.5px;
+  padding-top: 10.5px;
 }
+
+.form-area:hover,
+.form-area:focus{
+  border-color: var(--link-collor) ; 
+}
+
+.form-btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  
+  color: #ffffff;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px
+}
+
 
 /* Портфлио */
 
