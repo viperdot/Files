@@ -486,9 +486,14 @@
             <label class="form-label-area" for="comment" > Коментарий</label>
         <textarea class="form-area" name="comment" id="comment" placeholder="Введите текст" ></textarea></div>
         <div class="form-wrap-checkbox" > 
-            <label  class="form-checkbox-label"></label>
-            <input class="form-agree" type="checkbox">
-            <p>Соглашаюсь с рассылкой и принимаю <span>  <a href=" #"> Условия договора</a></span></p>
+            <label  class="form-checkbox-label"> 
+               
+            <input class="form-agree-checkbox" type="checkbox" name="agree" value="agree" > 
+            <svg class="form-checkbox-icon" width="16px"  height="15px">
+                <use href="./images/symbol-defs.svg#" ></use>
+            </svg>
+            <p class="form-agree-text" >Соглашаюсь с рассылкой и принимаю <span>  <a href=" #"> Условия договора</a></span></p>
+        </label>
             </div>
             <button class="form-btn" type="submit">Отправить</button>
   </form>
