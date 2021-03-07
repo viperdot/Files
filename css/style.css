@@ -664,14 +664,18 @@ img {
 
 /* Подвал сайта  */
 /* общее правило для всего футера */
+
 .footer-all {
   display: flex;
   align-items: baseline;
+ 
+
 }
 
 .footer-back {
   padding-top: 6px;
-  background-color: var(--footer-back);
+  background-color: var(--footer-back); 
+ 
 }
 /* футер лого и адрес */
 .footer-logo {
@@ -806,7 +810,45 @@ img {
   fill: var(--white-text-collor);
 }
 
-.sign-title {
+.sociall-sign{
+  display: flex;
+}
+
+.sign-wrap{
+  margin-left: 93px;
+
+ 
+}
+
+.sign-title{
+  display: block;
+}
+
+.sign-field{
+  display: block;
+  
+  width: 358px;
+  height: 50px;
+  
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--footer-back);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.sign-title{
+  /* position: absolute;
+  top: 0px;
+  right: 0; */
+  margin-top: 72px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -815,9 +857,55 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text-collor);
+  margin-bottom: 20px;
+}
+
+.sign{
+  display: flex;
+}
+
+.sign-btn-icon{
+  position: relative;
+}
+
+.sign-btn{ 
+ 
+  width: 200px;
+  height: 50px;
+  background-color: var(--link-collor);
+  cursor: pointer;
+  margin-left: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.sign-item { 
+  padding-left: 29px ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text-collor);
+}
+
+.sign-icon{
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: var(--white-text-collor);;
 }
 
 /* бэкдроп и модальное окно */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -1026,7 +1114,9 @@ img {
 .form-checkbox-icon{
   border-radius: 4px;
   margin-left: 39px;
-  border: 2px solid #212121
+  width: 16px;
+  height: 15px;
+  border: 1px solid #212121
 }
 
 .form-agree-text {
@@ -1041,8 +1131,8 @@ img {
 .form-agree-checkbox:checked ~ .form-checkbox-icon{
   background-color: var(--link-collor) ;
   border-color: var(--link-collor) ;
-  background-image: url("../images/icon check-without-back (2).svg");
-  background-size: contain;
+  /* background-image: url("../images/icon check-without-back (2).svg"); */
+  /* background-size: contain; */
   background-origin: border-box ;
   transition: background-color var(--transition);
 }
