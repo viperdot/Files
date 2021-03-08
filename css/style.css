@@ -815,7 +815,10 @@ img {
 }
 
 .sign-wrap{
-  margin-left: 93px;
+  margin-left: auto ;
+  margin-right: 0;
+  
+   
 
  
 }
@@ -862,6 +865,7 @@ img {
 
 .sign{
   display: flex;
+ 
 }
 
 .sign-btn-icon{
@@ -1088,6 +1092,7 @@ img {
   padding-right: 14px;
   padding-bottom: 10.5px;
   padding-top: 10.5px;
+  resize: none;
 }
 
 .form-area:hover,
@@ -1112,11 +1117,12 @@ img {
 }
 
 .form-checkbox-icon{
-  border-radius: 4px;
+  
   margin-left: 39px;
   width: 16px;
   height: 15px;
-  border: 1px solid #212121
+  border: 1px solid #212121;
+  background-origin: border-box ;
 }
 
 .form-agree-text {
@@ -1132,9 +1138,10 @@ img {
   background-color: var(--link-collor) ;
   border-color: var(--link-collor) ;
   /* background-image: url("../images/icon check-without-back (2).svg"); */
-  /* background-size: contain; */
+  background-size: contain;
   background-origin: border-box ;
   transition: background-color var(--transition);
+  
 }
 
 .form-btn {
